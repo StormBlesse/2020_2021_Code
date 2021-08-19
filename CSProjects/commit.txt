@@ -1,0 +1,16 @@
+  262  git commit -m "Removed accidental md"
+  263  git push
+  264  git branch
+  265  git branch -r
+  266  git branch -a
+  267  git branch -a | grep -v 'remotes'
+  268  git checkout
+  269  git remote show origin
+  270  git fetch --all
+  271  git checkout origin/gabriel
+  272  vi test.md
+  273  git add test.md
+  274  git commit -m "First commit" 
+  275  git push
+  276  git push origin HEAD:gabriel
+  277  history

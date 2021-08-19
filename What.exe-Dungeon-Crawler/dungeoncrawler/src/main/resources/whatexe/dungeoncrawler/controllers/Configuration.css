@@ -1,0 +1,80 @@
+@import "MainApp.css";
+
+.button {
+    -fx-text-fill: #22bd41;
+    -fx-font-family: Minecraftia;
+    -fx-background-color: #100f0f;
+    -fx-border-color: derive(white, -35%);
+    -fx-border-width: 3.5;
+}
+
+.button:hover {
+    -fx-background-color: derive(white, -80%);
+}
+
+.dialog-pane {
+    -fx-border-color: #100f0f;
+    -fx-border-width: 3.5;
+}
+
+.radio-button {
+    -fx-text-fill: #22bd41;
+    -fx-font-family: Minecraftia;
+}
+
+.radio-button .radio {
+    -fx-border-width: 2;
+    -fx-border-color: #22bd41;
+    -fx-background-color: transparent;
+    -fx-background-image: null;
+    -fx-border-radius: 0;
+    -fx-padding: 4px 4px 5px 4px;
+}
+
+.radio-button .radio:selected, .radio-button -radio:armed, .radio-button -radio:determinate, .radio-button -radio:indeterminate {
+    -fx-background-color: transparent;
+    -fx-background-image: null;
+}
+
+.radio-button .dot {
+    -fx-background-radius: 0;
+    -fx-padding: 5px 5px 4px 5px;
+    -fx-mark-color: #22bd41;
+    -fx-mark-highlight-color: #22bd41;
+}
+
+.label {
+    -fx-text-fill: #22bd41;
+    -fx-font-family: Minecraftia;
+}
+
+.name-label {
+    -fx-font-size: 30px;
+}
+
+.config-label {
+    -fx-font-size: 45px;
+}
+
+.text-field {
+    -fx-text-fill: #22bd41;
+    -fx-font-family: Minecraftia;
+    -fx-font-size: 18px;
+    -fx-background-color: transparent;
+    -fx-display-caret: false;
+}
+
+.bgpane {
+    -fx-background-color: #100f0f;
+}
+
+.selected-icon-pane {
+    -fx-border-width: 4;
+    -fx-border-color: #22bd41;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #22bd41;
+    -fx-font-family: Minecraftia;
+}
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="parentRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="256.0" prefWidth="384.0" styleClass="bgpane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="whatexe.dungeoncrawler.controllers.WelcomeScreenController">
+   <stylesheets>
+      <URL value="@WelcomeScreen.css" />
+   </stylesheets>
+</StackPane>

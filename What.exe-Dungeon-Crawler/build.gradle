@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+
+    // Add openjfx to project
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+
+    // Add moduleplugin for working with multiple modules
+    id "org.javamodularity.moduleplugin" version "1.6.0"
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+}
+
+// Declare JDK/JRE compatibilities
+sourceCompatibility = "11"
+targetCompatibility = "11"
+group "whatexe"
+
+// Apply plugins and JUnit5 for each subproject
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'org.javamodularity.moduleplugin'
+    apply plugin: 'org.openjfx.javafxplugin'
+    apply plugin: 'checkstyle'
+
+    dependencies {
+        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.1'
+        testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.6.1'
+        testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.6.1'
+    }
+
+    test {
+        useJUnitPlatform()
+
+        minHeapSize = "256m"
+        maxHeapSize = "2048m"
+        jvmArgs "-XX:+HeapDumpOnOutOfMemoryError", "-XX:HeapDumpPath=build/reports/heapdump/"
+    }
+
+    checkstyle {
+        configFile file('../cs2340_checks.xml')
+        toolVersion '8.24'
+    }
+}

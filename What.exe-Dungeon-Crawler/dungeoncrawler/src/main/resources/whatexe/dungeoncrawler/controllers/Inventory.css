@@ -1,0 +1,32 @@
+@import "MainApp.css";
+
+.bgpane {
+    -fx-background-image: url("images/inventory.png");
+    -fx-background-size: cover;
+}
+
+.label {
+    -fx-font-family: Minecraftia;
+}
+
+.description {
+    -fx-font-family: Minecraftia;
+    -fx-text-size: 7px;
+    -fx-text-fill: derive(white, -30%);
+}
+
+.health-progress-bar {
+    -fx-accent: derive(orangered, -30%);
+}
+
+.health-label {
+    -fx-text-fill: derive(orangered, -30%);
+}
+
+.money-label {
+    -fx-text-fill: gold;
+}
+
+.bgTrans {
+    -fx-background-color: transparent;
+}

@@ -1,0 +1,9 @@
+@import "MainApp.css";
+
+.label {
+    -fx-font-family: Minecraftia;
+}
+
+.bgpane {
+    -fx-background-image: url("images/welcome-console.gif");
+}
